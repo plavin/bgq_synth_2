@@ -7,9 +7,9 @@ def main(file1, out1, out2):
     i = 0
     for line in f.readlines():
         if i < 256:
-            out1.write("({0},{1},{2},{3},{4})".format(line[0], line[2] ,line[4], line[6], line[8]))
+            out1.write("({0},{1},{2},{3},{4})\n".format(line[0], line[2] ,line[4], line[6], line[8]))
         else:
-            out2.write("({0},{1},{2},{3},{4})".format(line[0], line[2] ,line[4], line[6], line[8]))
+            out2.write("({0},{1},{2},{3},{4})\n".format(line[0], line[2] ,line[4], line[6], line[8]))
         i= i + 1
 
 if __name__ == "__main__":
